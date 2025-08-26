@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB Comércio de Açaí Ltda</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; }
+    header { background: #6a0080; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #eee; display: flex; justify-content: center; gap: 10px; padding: 10px; }
+    nav button { padding: 10px 20px; border: none; background: #6a0080; color: #fff; cursor: pointer; border-radius: 5px; }
+    section { padding: 20px; display: none; }
+    section.active { display: block; }
+    .card { background: #fff; padding: 20px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JB Comércio de Açaí Ltda</h1>
+    <p>CNPJ: 22.417.908/0001-38</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('dados')">Dados Cadastrais</button>
+    <button onclick="showSection('endereco')">Endereço</button>
+    <button onclick="showSection('atividades')">Atividades</button>
+    <button onclick="showSection('contato')">Contato</button>
+    <button onclick="showSection('historico')">Histórico</button>
+  </nav>
+
+  <main>
+    <section id="dados" class="active">
+      <div class="card">
+        <h2>Dados Cadastrais</h2>
+        <p><strong>Razão Social:</strong> JB Comércio de Açaí Ltda</p>
+        <p><strong>Nome Fantasia:</strong> Não informado</p>
+        <p><strong>Data de Abertura:</strong> 08/05/2015</p>
+        <p><strong>Capital Social:</strong> R$ 50.000,00</p>
+        <p><strong>Situação:</strong> ATIVA</p>
+      </div>
+    </section>
+
+    <section id="endereco">
+      <div class="card">
+        <h2>Endereço</h2>
+        <p>Avenida São Paulo, 743, Loja I-078A</p>
+        <p>Bairro Zona 09</p>
+        <p>Maringá - PR</p>
+        <p>CEP: 87013-313</p>
+      </div>
+    </section>
+
+    <section id="atividades">
+      <div class="card">
+        <h2>Atividade Principal</h2>
+        <p>47.29-6-99 - Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente</p>
+        <h3>Atividades Secundárias</h3>
+        <ul>
+          <li>56.11-2-03 - Lanchonetes, casas de chá, de sucos e similares</li>
+          <li>47.81-4-00 - Comércio varejista de artigos do vestuário e acessórios</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="card">
+        <h2>Contato</h2>
+        <p><strong>Telefone:</strong> (44) 0000-0000</p>
+        <p><strong>Email:</strong> não informado</p>
+      </div>
+    </section>
+
+    <section id="historico">
+      <div class="card">
+        <h2>Histórico</h2>
+        <p>A empresa foi fundada em 2015 e atua no comércio de açaí e alimentos relacionados
